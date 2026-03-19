@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mconector | Tecnología simple para negocios reales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <nav class="navbar">
+        <div class="container flex-between">
+            <div class="logo">
+                <!-- Using the provided logo -->
+                <img src="Marca/logo.png" alt="Mconector" height="32" style="max-height: 36px;">
+            </div>
+            <div class="nav-links">
+                <a href="#solucion" class="nav-link">Solución</a>
+                <a href="#como-funciona" class="nav-link">Cómo Funciona</a>
+                <a href="#planes" class="nav-link">Planes</a>
+                <a href="#contacto" class="btn btn-primary btn-small">Agenda una llamada</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 🏆 HERO SECTION (PAS Framework with Canvas Scroll) -->
+    <div class="hero-scroll-container">
+        <section class="hero">
+            <!-- Canvas Animated Background Full -->
+            <canvas id="hero-canvas" class="hero-canvas"></canvas>
+            
+            <div class="container hero-content">
+            <h1>Organiza tu negocio, automatiza tareas y usa IA <br><span class="text-gradient">sin complicarte.</span></h1>
+            <p class="subtitle">
+                Ayudamos a negocios de servicios a implementar un sistema simple de seguimiento y control. Ahorra tiempo, responde más rápido y crece organizadamente.
+            </p>
+            <div class="hero-actions">
+                <a href="#contacto" class="btn btn-primary">Agenda una llamada</a>
+                <a href="#solucion" class="btn btn-secondary">Explorar el sistema</a>
+            </div>
+            
+            <div class="trust-bar">
+                <span class="trust-text">Sistemas creados para negocios de</span>
+                <div style="display: flex; gap: 2rem; align-items: center; opacity: 0.6; font-weight: 600; color: var(--on-surface-variant); flex-wrap: wrap; justify-content: center; margin-top: 1rem;">
+                    <span>CONSTRUCCIÓN</span>
+                    <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--outline);"></span>
+                    <span>ROOFING</span>
+                    <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--outline);"></span>
+                    <span>REMODELACIÓN</span>
+                    <span style="width: 4px; height: 4px; border-radius: 50%; background: var(--outline);"></span>
+                    <span>HOME SERVICES</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+    <!-- 😤 PROBLEM SECTION -->
+    <section class="section-bg-alt" id="problema">
+        <div class="container text-center max-w-900" style="max-width: 800px; margin: 0 auto; margin-bottom: 4rem;">
+            <h2>Crecer sin sistema es <span style="color: var(--primary);">agotador.</span></h2>
+            <p class="subtitle" style="margin: 0 auto;">Muchos dueños de negocio son excelentes en su oficio, pero el desorden comercial frena su crecimiento.</p>
+        </div>
+
+        <div class="container grid grid-3">
+            <div class="card">
+                <div class="card-icon"><span class="material-symbols-outlined">phone_missed</span></div>
+                <h3>Llamadas y SMS sin registro</h3>
+                <p>Mensajes de texto perdidos y llamadas no devueltas. Es imposible saber a tiempo quién quiere comprar y quién solo pregunta.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon" style="color: var(--secondary);"><span class="material-symbols-outlined">notifications_off</span></div>
+                <h3>Seguimiento que se olvida</h3>
+                <p>No hay recordatorios automáticos. Los clientes potenciales se enfrían simplemente porque nadie les volvió a escribir.</p>
+            </div>
+            <div class="card">
+                <div class="card-icon" style="color: var(--tertiary);"><span class="material-symbols-outlined">history_edu</span></div>
+                <h3>Procesos 100% manuales</h3>
+                <p>Pasas horas escribiendo presupuestos y enviando la misma información una y otra vez. Tu tiempo vale más en la obra.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ✅ SOLUTION SECTION (Bento Grid) -->
+    <section id="solucion">
+        <div class="container text-center" style="max-width: 800px; margin: 0 auto; margin-bottom: 4rem;">
+            <h2>La solución <span style="color: var(--secondary);">humana</span> para tu negocio.</h2>
+            <p class="subtitle" style="margin: 0 auto;">Mconector no vende tecnología complicada. Vendemos ahorro de tiempo, claridad operativa y control.</p>
+        </div>
+
+        <div class="container bento-grid">
+            <div class="bento-item bento-wide" style="background: var(--surface-base); border: 1px solid var(--outline);">
+                <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--primary); margin-bottom: 1.5rem;">group</span>
+                <h3 style="font-size: 2rem;">Organiza contactos</h3>
+                <p style="font-size: 1.1rem; max-width: 400px; margin-top: 1rem;">Toda tu base de datos centralizada y estructurada por tipo de servicio y etapa de venta.</p>
+            </div>
+            <div class="bento-item bento-wide" style="background: var(--surface-low); border: 1px solid var(--outline);">
+                <span class="material-symbols-outlined" style="font-size: 2.5rem; color: var(--secondary); margin-bottom: 1.5rem;">bolt</span>
+                <h3 style="font-size: 2rem;">Automatiza tareas</h3>
+                <p style="font-size: 1.1rem; max-width: 400px; margin-top: 1rem;">Envía confirmaciones y seguimientos de forma automática mientras te enfocas en dirigir el negocio.</p>
+            </div>
+            <div class="bento-item bento-large" style="background: var(--brand-gradient); color: white;">
+                <h3 style="color: white; font-size: 2.5rem; margin-bottom: 1.5rem;">Más control, menos estrés.</h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.25rem; max-width: 600px;">Toma decisiones basadas en números reales, no en suposiciones. La inteligencia artificial te asiste para que el negocio trabaje para ti.</p>
+            </div>
+            <div class="bento-item flex-center">
+                <div style="text-align: center;">
+                    <span class="material-symbols-outlined" style="font-size: 3rem; color: var(--tertiary);">trending_up</span>
+                    <h4 style="margin-top: 1rem;">Mejora el Cierre</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 🔄 HOW IT WORKS -->
+    <section class="section-bg-alt" id="como-funciona">
+        <div class="container">
+            <h2>Tu camino al <span class="text-tertiary">orden</span> en 3 pasos</h2>
+            
+            <div class="step-container">
+                <div class="step">
+                    <div class="step-line"></div>
+                    <div class="step-number">1</div>
+                    <span class="material-symbols-outlined step-icon" style="color: var(--primary); font-size: 2.5rem; margin-bottom: 1rem;">target</span>
+                    <h3>Captas contactos</h3>
+                    <p>Conectamos tus canales (Ads, Web, Teléfono) para que cada prospecto entre ordenado al sistema.</p>
+                </div>
+                <div class="step">
+                    <div class="step-line"></div>
+                    <div class="step-number">2</div>
+                    <span class="material-symbols-outlined step-icon" style="color: var(--secondary); font-size: 2.5rem; margin-bottom: 1rem;">account_tree</span>
+                    <h3>Organizas y automatizas</h3>
+                    <p>El sistema clasifica al lead y responde al instante el primer mensaje o agenda citas sin que muevas un dedo.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <span class="material-symbols-outlined step-icon" style="color: var(--tertiary); font-size: 2.5rem; margin-bottom: 1rem;">rocket_launch</span>
+                    <h3>Operas con control</h3>
+                    <p>Tú y tu equipo saben siempre qué falta por cerrar y cuánto dinero tienen en el pipeline.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 💰 PRICING/PLANS -->
+    <section id="planes">
+        <div class="container text-center" style="max-width: 800px; margin: 0 auto; margin-bottom: 4rem;">
+            <h2>Planes para cada <span class="text-gradient">etapa</span></h2>
+            <p class="subtitle" style="margin: 0 auto;">Tres niveles claros para que elijas según las necesidades actuales de tu operación.</p>
+        </div>
+
+        <div class="container grid grid-3">
+            <!-- Nivel 1 -->
+            <div class="pricing-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Base Digital</h3>
+                <p style="font-size: 0.875rem;">Para empezar a ordenar tu captación.</p>
+                <div class="price">$297 <span>/setup</span></div>
+                <p style="font-weight: 600; color: var(--on-surface);">+ $147 / mes</p>
+                <ul class="pricing-features">
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Optimización Google Business Profile</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Landing page simple de contacto</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Botón Click to Call & Captura (SMS/Voz)</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Notificación de lead nuevo</div></li>
+                </ul>
+                <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Empezar Nivel 1</a>
+            </div>
+
+            <!-- Nivel 2: Featured -->
+            <div class="pricing-card featured">
+                <div class="pricing-badge">Recomendado</div>
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Sistema Comercial</h3>
+                <p style="font-size: 0.875rem;">Para organizar leads y responder mejor.</p>
+                <div class="price">$497 <span>/setup</span></div>
+                <p style="font-weight: 600; color: var(--on-surface);">+ $197 / mes</p>
+                <ul class="pricing-features">
+                    <li><span class="material-symbols-outlined">check_circle</span> <div><strong>Todo lo del Nivel 1</strong></div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Configuración completa de CRM</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Pipeline y seguimiento automatizado</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Asistente comercial inicial y SMS</div></li>
+                </ul>
+                <a href="#contacto" class="btn btn-primary" style="width: 100%;">Quiero este sistema</a>
+            </div>
+
+            <!-- Nivel 3 -->
+            <div class="pricing-card">
+                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Asistencia Inteligente</h3>
+                <p style="font-size: 0.875rem;">Automatización avanzada y menos carga.</p>
+                <div class="price">$697 <span>/setup</span></div>
+                <p style="font-weight: 600; color: var(--on-surface);">+ $297 / mes</p>
+                <ul class="pricing-features">
+                    <li><span class="material-symbols-outlined">check_circle</span> <div><strong>Todo lo del Nivel 2</strong></div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Asistente IA para el encargado</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Automatización completa de tareas</div></li>
+                    <li><span class="material-symbols-outlined">check_circle</span> <div>Soporte y optimización periódica</div></li>
+                </ul>
+                <a href="#contacto" class="btn btn-secondary" style="width: 100%;">Hablemos del Nivel 3</a>
+            </div>
+        </div>
+        <div class="container text-center" style="margin-top: 3rem;">
+            <p style="font-size: 0.875rem; color: var(--on-surface-variant);">Nota: El setup cubre la implementación inicial. La mensualidad cubre alojamiento, soporte, ajustes y mejoras continuas.</p>
+        </div>
+    </section>
+
+    <!-- ❓ FAQ -->
+    <section class="section-bg-alt" id="faq">
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center" style="margin-bottom: 3rem;">Preguntas Frecuentes</h2>
+            
+            <details class="faq-item">
+                <summary class="faq-question">No entiendo cómo funciona la tecnología, ¿es muy difícil? <span class="material-symbols-outlined">expand_more</span></summary>
+                <p class="faq-answer">Mconector está diseñado exactamente para quienes no quieren pelear con la tecnología. Nosotros nos encargamos de todo el laberinto técnico por detrás, para que tú y tu equipo reciban un sistema limpio y listo para operar desde su teléfono o computadora.</p>
+            </details>
+            
+            <details class="faq-item">
+                <summary class="faq-question">¿Vale la pena la mensualidad? <span class="material-symbols-outlined">expand_more</span></summary>
+                <p class="faq-answer">Piensa en la mensualidad como el salario de tu mejor asistente que trabaja 24/7 sin descanso. Responde clientes a las 11 PM un sábado, organiza tus citas y no te deja perder prospectos valiosos. Recuperas la inversión al cerrar uno o dos trabajos que antes se te escapaban por falta de seguimiento.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary class="faq-question">¿Cuánto tarda en implementarse? <span class="material-symbols-outlined">expand_more</span></summary>
+                <p class="faq-answer">Dependiendo del nivel elegido, el sistema se construye y optimiza entre 2 y 4 semanas. Nos aseguramos de que todo funcione perfectamente antes del lanzamiento oficial.</p>
+            </details>
+        </div>
+    </section>
+
+    <!-- 🚀 FINAL CTA -->
+    <section id="contacto" style="padding: 4rem 0;">
+        <div class="container cta-section">
+            <h2 style="font-size: clamp(2.5rem, 4vw, 3.5rem); margin-bottom: 1.5rem;">Deja de apagar incendios. Empieza a usar el sistema.</h2>
+            <p style="font-size: 1.25rem; max-width: 600px; margin: 0 auto 3rem;">Agenda una llamada sin compromiso. Evaluaremos tu proceso actual y te diremos exactamente cómo podemos ordenarlo.</p>
+            <a href="mailto:mconector10@gmail.com" class="btn btn-primary" style="font-size: 1.125rem; padding: 1rem 3rem;">Agendar Diagnóstico Gratuito</a>
+            <p style="margin-top: 2rem; font-size: 0.875rem; opacity: 0.8;"><span class="material-symbols-outlined" style="vertical-align: middle; font-size: 1rem; margin-right: 0.5rem;">verified</span> Garantía de claridad: nuestra llamada nunca será una venta a presión de tecnología estéril.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-grid">
+            <div style="grid-column: span 2;">
+                <img src="Marca/logo.png" alt="Mconector" class="footer-logo">
+                <p style="max-width: 300px;">Ayudamos a negocios de servicios en USA a implementar tecnología útil, simple y práctica.</p>
+                <div style="margin-top: 1.5rem; display: flex; gap: 1rem;">
+                    <span class="material-symbols-outlined" style="opacity: 0.5;">phone</span> <span style="font-weight: 600; color: var(--on-surface);">203 590 0858</span>
+                </div>
+            </div>
+            <div>
+                <h4 class="footer-heading">Soluciones</h4>
+                <ul class="footer-links">
+                    <li><a href="#planes">Base Digital</a></li>
+                    <li><a href="#planes">Sistema Comercial</a></li>
+                    <li><a href="#planes">Asistencia Inteligente</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="footer-heading">Mconector</h4>
+                <ul class="footer-links">
+                    <li><a href="#problema">El Reto</a></li>
+                    <li><a href="#como-funciona">Metodología</a></li>
+                    <li><a href="#faq">Ayuda (FAQ)</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="copyright">
+                &copy; 2026 Mconector. Todos los derechos reservados. Operando en Connecticut, USA.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script to toggle FAQ answers
+        document.querySelectorAll('details').forEach((detail) => {
+            detail.addEventListener('click', (e) => {
+                const icon = detail.querySelector('.material-symbols-outlined');
+                if (!detail.open) {
+                    icon.style.transform = 'rotate(180deg)';
+                } else {
+                    icon.style.transform = 'rotate(0deg)';
+                }
+            });
+        });
+
+        // 🖼️ Canvas Scroll Animation for Hero Background
+        const canvas = document.getElementById('hero-canvas');
+        const context = canvas.getContext('2d');
+        const frameCount = 200;
+        
+        // Define directory
+        const imgPath = (index) => `framed6f1-jpg/ezgif-frame-${index.toString().padStart(3, '0')}.jpg`;
+
+        // Preload images
+        const images = [];
+        let imagesLoaded = 0;
+        
+        for (let i = 1; i <= frameCount; i++) {
+            const img = new Image();
+            img.src = imgPath(i);
+            img.onload = () => {
+                imagesLoaded++;
+                if (imagesLoaded === 1) { // Draw first frame immediately
+                    drawFrame(0);
+                }
+            };
+            images.push(img);
+        }
+
+        // Resize Canvas efficiently with High-DPI support
+        function resizeCanvas() {
+            const ratio = window.devicePixelRatio || 1;
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            
+            canvas.width = width * ratio;
+            canvas.height = height * ratio;
+            
+            // Set CSS visual size
+            canvas.style.width = width + 'px';
+            canvas.style.height = height + 'px';
+            
+            context.scale(ratio, ratio);
+            
+            // Re-enable smoothing after resize
+            context.imageSmoothingEnabled = true;
+            context.imageSmoothingQuality = 'high';
+            
+            drawFrame(currentFrame);
+        }
+
+        let currentFrame = 0;
+
+        function drawFrame(index) {
+            currentFrame = index;
+            // Use logical width/height since context is scaled
+            const cw = window.innerWidth;
+            const ch = window.innerHeight;
+            
+            if (!images[index] || !images[index].complete || cw === 0) return;
+            
+            const img = images[index];
+            
+            // Contain styling to prevent excessive zoom and pixelation on widescreens
+            // The black background of the images will blend out due to mix-blend-mode: screen
+            let scale = Math.min(cw / img.width, ch / img.height);
+            
+            // Make it slightly larger so it occupies a good portion of the screen, up to 120% of the screen height, but no more
+            scale = scale * 1.2; 
+            
+            const drawWidth = img.width * scale;
+            const drawHeight = img.height * scale;
+            
+            const x = (cw / 2) - (drawWidth / 2);
+            const y = (ch / 2) - (drawHeight / 2);
+            
+            context.clearRect(0, 0, cw, ch);
+            context.globalCompositeOperation = 'screen';
+            context.drawImage(img, x, y, drawWidth, drawHeight);
+        }
+
+        window.addEventListener('resize', resizeCanvas);
+        resizeCanvas();
+
+        // Scroll Logic to scrub through frames
+        window.addEventListener('scroll', () => {
+            const container = document.querySelector('.hero-scroll-container');
+            const rect = container.getBoundingClientRect();
+            
+            // Maximum scroll distance in pixels relative to viewport
+            const maxScroll = rect.height - window.innerHeight;
+            
+            // If the element has started scrolling up past the viewport top
+            let scrollFraction = 0;
+            if (rect.top <= 0) {
+                // Calculate how much we've scrolled inside the container
+                scrollFraction = -rect.top / maxScroll;
+            }
+            
+            // Clamp fraction between 0.0 and 1.0
+            scrollFraction = Math.min(Math.max(scrollFraction, 0), 1);
+            
+            // Calculate corresponding frame (0 to 199)
+            const frameIndex = Math.floor(scrollFraction * (frameCount - 1));
+            
+            // Use requestAnimationFrame for smooth drawing
+            requestAnimationFrame(() => drawFrame(frameIndex));
+        });
+    </script>
+</body>
+</html>
