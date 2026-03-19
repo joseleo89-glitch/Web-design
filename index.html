@@ -16,11 +16,18 @@
                 <img src="Marca/logo.png" alt="Mconector" height="32" style="max-height: 36px;">
             </div>
             <div class="nav-links">
-                <a href="#solucion" class="nav-link">Solución</a>
-                <a href="explorar.html" class="nav-link">Explorar</a>
-                <a href="#planes" class="nav-link">Planes</a>
-                <a href="agendar.html" class="btn btn-primary btn-small">Agenda una llamada</a>
+            <a href="index.html" class="nav-link active">Inicio</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link" style="display: flex; align-items: center; gap: 4px;">Soluciones <span style="font-size: 0.8em;">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="base-digital.html">Base Digital</a>
+                    <a href="sistema-comercial.html">Sistema Comercial</a>
+                    <a href="asistencia-inteligente.html">Asistencia Inteligente</a>
+                </div>
             </div>
+            <a href="#planes" class="nav-link">Paquetes</a>
+            <a href="agendar.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; margin-left: 1rem;">Agendar Llamada</a>
+        </div>
         </div>
     </nav>
 
@@ -153,48 +160,51 @@
         <div class="container grid grid-3">
             <!-- Nivel 1 -->
             <div class="pricing-card">
-                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Base Digital</h3>
-                <p style="font-size: 0.875rem;">Para empezar a ordenar tu captación.</p>
-                <div class="price">$297 <span>/setup</span></div>
-                <p style="font-weight: 600; color: var(--on-surface);">+ $147 / mes</p>
+                <h3 class="heading-sm">Nivel 1: Base Digital</h3>
+                <div class="price">
+                    <span class="currency">$</span><span class="amount">297</span> <span class="term">/setup</span><br>
+                    <span class="monthly-fee" style="font-size: 1rem; color: var(--text-secondary);">+ $147 / mes</span>
+                </div>
                 <ul class="pricing-features">
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Optimización Google Business Profile</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Landing page simple de contacto</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Botón Click to Call & Captura (SMS/Voz)</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Notificación de lead nuevo</div></li>
+                    <li>Optimización Google Business Profile</li>
+                    <li>Landing page simple de contacto</li>
+                    <li>Botón Click to Call & Captura (SMS/Voz)</li>
+                    <li>Notificación de lead nuevo</li>
                 </ul>
-                <a href="agendar.html" class="btn btn-secondary" style="width: 100%;">Empezar Nivel 1</a>
+                <a href="base-digital.html" class="btn btn-outline" style="width: 100%;">Conocer Base Digital</a>
             </div>
 
             <!-- Nivel 2: Featured -->
-            <div class="pricing-card featured">
-                <div class="pricing-badge">Recomendado</div>
-                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Sistema Comercial</h3>
-                <p style="font-size: 0.875rem;">Para organizar leads y responder mejor.</p>
-                <div class="price">$497 <span>/setup</span></div>
-                <p style="font-weight: 600; color: var(--on-surface);">+ $197 / mes</p>
+            <div class="pricing-card popular">
+                <div class="popular-badge">MÁS SOLICITADO</div>
+                <h3 class="heading-sm">Nivel 2: Sistema Comercial</h3>
+                <div class="price">
+                    <span class="currency">$</span><span class="amount">497</span> <span class="term">/setup</span><br>
+                    <span class="monthly-fee" style="font-size: 1rem; color: var(--tertiary);">+ $197 / mes</span>
+                </div>
                 <ul class="pricing-features">
-                    <li><span class="material-symbols-outlined">check_circle</span> <div><strong>Todo lo del Nivel 1</strong></div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Configuración completa de CRM</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Pipeline y seguimiento automatizado</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Asistente comercial inicial y SMS</div></li>
+                    <li><strong>Todo lo del Nivel 1</strong></li>
+                    <li>Configuración completa de CRM</li>
+                    <li>Pipeline y seguimiento automatizado</li>
+                    <li>Asistente comercial inicial y SMS</li>
                 </ul>
-                <a href="agendar.html" class="btn btn-primary" style="width: 100%;">Quiero este sistema</a>
+                <a href="sistema-comercial.html" class="btn btn-primary" style="width: 100%;">Configurar Sistema</a>
             </div>
 
             <!-- Nivel 3 -->
             <div class="pricing-card">
-                <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Asistencia Inteligente</h3>
-                <p style="font-size: 0.875rem;">Automatización avanzada y menos carga.</p>
-                <div class="price">$697 <span>/setup</span></div>
-                <p style="font-weight: 600; color: var(--on-surface);">+ $297 / mes</p>
+                <h3 class="heading-sm">Nivel 3: Asistencia Inteligente</h3>
+                <div class="price">
+                    <span class="currency">$</span><span class="amount">697</span> <span class="term">/setup</span><br>
+                    <span class="monthly-fee" style="font-size: 1rem; color: var(--text-secondary);">+ $297 / mes</span>
+                </div>
                 <ul class="pricing-features">
-                    <li><span class="material-symbols-outlined">check_circle</span> <div><strong>Todo lo del Nivel 2</strong></div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Asistente IA para el encargado</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Automatización completa de tareas</div></li>
-                    <li><span class="material-symbols-outlined">check_circle</span> <div>Soporte y optimización periódica</div></li>
+                    <li><strong>Todo lo del Nivel 2</strong></li>
+                    <li>Asistente IA para el encargado</li>
+                    <li>Automatización completa de tareas</li>
+                    <li>Soporte y optimización periódica</li>
                 </ul>
-                <a href="agendar.html" class="btn btn-secondary" style="width: 100%;">Hablemos del Nivel 3</a>
+                <a href="asistencia-inteligente.html" class="btn btn-outline" style="width: 100%;">Escalar con IA</a>
             </div>
         </div>
         <div class="container text-center" style="margin-top: 3rem;">

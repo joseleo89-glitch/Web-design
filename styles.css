@@ -139,23 +139,69 @@ section {
 }
 
 .nav-links {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+    display: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+    }
 }
 
 .nav-link {
-  text-decoration: none;
-  color: var(--on-surface-variant);
-  font-weight: 600;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  transition: color 0.2s ease;
+    color: var(--on-surface-variant); /* Changed from --text-secondary to match existing variable */
+    font-weight: 600; /* Changed from 500 to match existing */
+    transition: color 0.2s ease; /* Changed from 0.3s to match existing */
+    font-size: 0.875rem; /* Changed from 0.95rem to match existing */
+    text-transform: uppercase; /* Added from existing */
+    letter-spacing: 0.05em; /* Added from existing */
+    text-decoration: none; /* Added from existing */
 }
 
-.nav-link:hover {
-  color: var(--primary);
+.nav-link:hover, .nav-link.active {
+    color: var(--primary); /* Changed from --text-primary to match existing variable */
+}
+
+/* Navbar Dropdown (Soluciones) */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--surface-low);
+    min-width: 220px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    border: 1px solid var(--outline);
+    border-radius: var(--radius-md);
+    padding: 0.5rem 0;
+    z-index: 100;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    animation: fadeInDropdown 0.2s ease forwards;
+}
+.dropdown-content a {
+    color: var(--on-surface-variant); /* Changed from --text-primary to match existing variable */
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    display: block;
+    font-size: 0.95rem;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+.dropdown-content a:hover {
+    background: rgba(255,255,255,0.05);
+    color: var(--primary); /* Changed from --primary-main to match existing variable */
+}
+@keyframes fadeInDropdown {
+    from { opacity: 0; transform: translate(-50%, 10px); }
+    to { opacity: 1; transform: translate(-50%, 0); }
 }
 
 /* Buttons */

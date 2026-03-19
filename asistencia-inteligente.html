@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asistencia Inteligente | Mconector</title>
+    <meta name="description" content="Escala tus operaciones corporativas con el poder de la Inteligencia Artificial. Automatización completa de procesos para negocios de servicios.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 160px 0 100px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(8, 12, 23, 1) 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid var(--outline);
+            position: relative;
+            overflow: hidden;
+        }
+        /* Efecto de cuadrícula de fondo tecnológico */
+        .page-header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0;right: 0; bottom: 0;
+            background-image: linear-gradient(rgba(255,255,255,0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255,255,255,0.03) 1px, transparent 1px);
+            background-size: 50px 50px;
+            z-index: 0;
+            opacity: 0.5;
+        }
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        .feature-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            margin: 4rem 0;
+        }
+        @media (min-width: 768px) {
+            .feature-row {
+                flex-direction: row;
+                align-items: center;
+                gap: 4rem;
+            }
+            .feature-row:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+        .feature-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background: rgba(255,255,255,0.02);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--outline);
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature-visual {
+            flex: 1;
+            background: var(--surface-low);
+            border-radius: var(--radius-md);
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 1px solid rgba(0, 200, 216, 0.15);
+            box-shadow: inset 0 0 20px rgba(0, 200, 216, 0.05);
+        }
+        .pricing-summary {
+            background: url('framed6f1-jpg/ezgif-frame-100.jpg') center/cover;
+            border: 1px solid var(--outline);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 4rem auto;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+        .pricing-summary::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(15, 23, 42, 0.95);
+            z-index: -1;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Navbar -->
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Marca/logo.png" alt="Mconector Logo" style="height: 32px; width: auto;">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link" style="display: flex; align-items: center; gap: 4px;">Soluciones <span style="font-size: 0.8em;">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="base-digital.html">Base Digital</a>
+                    <a href="sistema-comercial.html">Sistema Comercial</a>
+                    <a href="asistencia-inteligente.html">Asistencia Inteligente</a>
+                </div>
+            </div>
+            <a href="index.html#planes" class="nav-link">Paquetes</a>
+            <a href="agendar.html" class="btn btn-primary btn-small">Agenda una llamada</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container header-content" style="max-width: 900px;">
+            <p class="text-sm font-semibold" style="margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px; color: var(--secondary-main);">Nivel 3: Asistencia Inteligente</p>
+            <h1 class="heading-lg" style="margin-bottom: 1.5rem;">Escala tu negocio de servicios con <br><span class="text-gradient">Inteligencia Artificial operativa</span>.</h1>
+            <p class="subtitle" style="font-size: 1.125rem;">
+                Construimos cerebros digitales que actúan como gerentes de tráfico para tu empresa. Reduce la dependencia de asistentes humanos para despachar, enrutar y dar seguimiento.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 4rem 0;">
+        
+        <div class="feature-block">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--secondary-main); font-size: 2rem; margin-bottom: 1rem;">smart_toy</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Asistente de IA para el Manager</h3>
+                    <p class="text-secondary">Tu encargado o tú ya no tienen que pasar horas delegando trabajos ni organizando cuadrillas. El sistema de Asistencia Inteligente recopila los datos del trabajo a realizar y los distribuye de forma autónoma basándose en tus reglas preestablecidas.</p>
+                </div>
+                <div class="feature-visual">🤖</div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--tertiary); font-size: 2rem; margin-bottom: 1rem;">settings_timelapse</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Automatización 360º de Tareas</h3>
+                    <p class="text-secondary">Del lead a la factura sin intervención. El cliente agenda, el empleado recibe la alerta en tiempo real, el empleado llega al sitio, sube la foto de conclusión y automáticamente el cliente recibe un SMS con su factura (Invoice) por pagar. Todo invisible para ti.</p>
+                </div>
+                <div class="feature-visual">⚙️</div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--primary-main); font-size: 2rem; margin-bottom: 1rem;">engineering</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Soporte, Mantenimiento y Optimización</h3>
+                    <p class="text-secondary">Este algoritmo es el corazón financiero de tu operación. Nos encargamos de mantener la plataforma corriendo al 100%, realizando pruebas de estrés, seguridad y optimización mensual. El software crece y se moldea junto a tu escala.</p>
+                </div>
+                <div class="feature-visual">🏗️</div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--secondary-main); font-size: 2rem; margin-bottom: 1rem;">layers</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Niveles 1 y 2 Incluidos</h3>
+                    <p class="text-secondary">La cúspide del ecosistema Mconector. Por supuesto, integra la infraestructura base (Nivel 1) y el motor CRM (Nivel 2) como cimientos para desplegar la Inteligencia Artificial.</p>
+                </div>
+                <div class="feature-visual">🚀</div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="pricing-summary">
+            <h3 class="heading-md" style="margin-bottom: 1rem;">Inversión Transparente</h3>
+            <p class="text-secondary" style="margin-bottom: 2rem;">Todo tu negocio automatizado en un cerebro digital único.</p>
+            
+            <div style="font-family: var(--font-secondary); margin-bottom: 2.5rem;">
+                <span style="font-size: 3rem; font-weight: 800;">$697</span> <span class="text-secondary">USD / setup inicial</span><br>
+                <div style="margin-top: 0.5rem;">
+                    <span style="color: var(--secondary-main); font-weight: 700; font-size: 1.5rem;">+ $297 USD / mes</span>
+                </div>
+            </div>
+
+            <a href="agendar.html" class="btn btn-primary" style="width: 100%; font-size: 1.125rem; padding: 1rem;">Contratar Asistencia Inteligente</a>
+            <p class="text-sm text-secondary" style="margin-top: 1.5rem;">Evaluemos la arquitectura de tu empresa gratis. <a href="agendar.html" style="color: var(--primary-main); text-decoration: underline;">Agenda una consultoría.</a></p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container container-footer">
+            <div class="footer-col">
+                <img src="Marca/logo.png" alt="Mconector" class="footer-logo" style="height: 32px;">
+                <p class="text-sm text-secondary" style="max-width: 250px;">Ayudando a negocios de servicios locales a operar con precisión corporativa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="agendar.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="text-sm text-secondary">© 2026 Mconector. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

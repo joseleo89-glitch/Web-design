@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Digital | Mconector</title>
+    <meta name="description" content="Aparece en Google, ten una web rápida dedicada a convertir y no pierdas ni una llamada más con nuestro paquete Base Digital.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 140px 0 80px;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(15,23,42,1) 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid var(--outline);
+        }
+        .feature-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            margin: 4rem 0;
+        }
+        @media (min-width: 768px) {
+            .feature-row {
+                flex-direction: row;
+                align-items: center;
+                gap: 4rem;
+            }
+            .feature-row:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+        .feature-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background: var(--surface-low);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--outline);
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature-visual {
+            flex: 1;
+            background: var(--surface-base);
+            border-radius: var(--radius-md);
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .pricing-summary {
+            background: var(--surface-base);
+            border: 2px solid var(--primary-main);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 4rem auto;
+            position: relative;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Navbar -->
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Marca/logo.png" alt="Mconector Logo" style="height: 32px; width: auto;">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link" style="display: flex; align-items: center; gap: 4px;">Soluciones <span style="font-size: 0.8em;">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="base-digital.html">Base Digital</a>
+                    <a href="sistema-comercial.html">Sistema Comercial</a>
+                    <a href="asistencia-inteligente.html">Asistencia Inteligente</a>
+                </div>
+            </div>
+            <a href="index.html#planes" class="nav-link">Paquetes</a>
+            <a href="agendar.html" class="btn btn-primary btn-small">Agenda una llamada</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container" style="max-width: 800px;">
+            <p class="text-sm font-semibold text-gradient" style="margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Nivel 1: Base Digital</p>
+            <h1 class="heading-lg" style="margin-bottom: 1.5rem;">Aparece en Google y no pierdas <br><span style="color: var(--primary);">ni una llamada más.</span></h1>
+            <p class="subtitle" style="font-size: 1.125rem;">
+                Diseñado para empresas locales que necesitan una presencia web sólida, rápida y orientada 100% a convertir visitantes en llamadas y contactos sin fricción.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 4rem 0;">
+        
+        <div class="feature-block">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--primary-main); font-size: 2rem; margin-bottom: 1rem;">storefront</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Optimización en Google (GBP)</h3>
+                    <p class="text-secondary">Si no apareces en el mapa cuando alguien busca tus servicios cerca, no existes. Optimizamos tu Perfil de Negocio de Google para que destaques orgánicamente, recolectes reseñas fácilmente y seas la opción #1 en tu área local.</p>
+                </div>
+                <div class="feature-visual">🗺️</div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--secondary-main); font-size: 2rem; margin-bottom: 1rem;">speed</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Landing Page de Alta Conversión</h3>
+                    <p class="text-secondary">Olvídate de esas páginas web viejas, lentas y llenas de texto que nadie lee. Creamos una "Landing Page" (como esta) enfocada en la velocidad y en lograr que el cliente haga clic en el botón de llamar o deje sus datos al instante.</p>
+                </div>
+                <div class="feature-visual">⚡</div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--tertiary); font-size: 2rem; margin-bottom: 1rem;">contact_phone</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Captura Omnicanal (Voz y SMS)</h3>
+                    <p class="text-secondary">Integramos botones inteligentes de 'Click to Call' y captura de mensajes de texto en toda tu presencia online. Si un cliente prefiere escribir un SMS antes que llamar, lo recibirás ordenado en un solo lugar.</p>
+                </div>
+                <div class="feature-visual">📱</div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--primary-main); font-size: 2rem; margin-bottom: 1rem;">notification_important</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Alertas Inmediatas de Nuevos Leads</h3>
+                    <p class="text-secondary">La velocidad de respuesta lo es todo. Nuestro sistema te envía una notificación en tiempo real directo a tu teléfono cada vez que alguien llena un formulario u oprime el botón de contacto, para que cierres la venta mientras el cliente está "caliente".</p>
+                </div>
+                <div class="feature-visual">🔔</div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="pricing-summary">
+            <h3 class="heading-md" style="margin-bottom: 1rem;">Inversión Transparente</h3>
+            <p class="text-secondary" style="margin-bottom: 2rem;">Todo el sistema llave en mano, hospedaje, mantenimiento y soporte técnico incluido.</p>
+            
+            <div style="font-family: var(--font-secondary); margin-bottom: 2.5rem;">
+                <span style="font-size: 3rem; font-weight: 800;">$297</span> <span class="text-secondary">USD / setup inicial</span><br>
+                <div style="margin-top: 0.5rem;">
+                    <span style="color: var(--primary-main); font-weight: 700; font-size: 1.5rem;">+ $147 USD / mes</span>
+                </div>
+            </div>
+
+            <a href="agendar.html" class="btn btn-primary" style="width: 100%; font-size: 1.125rem; padding: 1rem;">Quiero asegurar mi Base Digital</a>
+            <p class="text-sm text-secondary" style="margin-top: 1.5rem;">¿Dudas? <a href="agendar.html" style="color: var(--text-primary); text-decoration: underline;">Agenda tu llamada gratuita</a> para evaluar tu negocio sin compromiso.</p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container container-footer">
+            <div class="footer-col">
+                <img src="Marca/logo.png" alt="Mconector" class="footer-logo" style="height: 32px;">
+                <p class="text-sm text-secondary" style="max-width: 250px;">Ayudando a negocios de servicios locales a operar con precisión corporativa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="agendar.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="text-sm text-secondary">© 2026 Mconector. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

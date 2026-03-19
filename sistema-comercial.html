@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Comercial | Mconector</title>
+    <meta name="description" content="Automatiza el seguimiento y organiza tus cotizaciones sin esfuerzo manual. El CRM construido especialmente para negocios de servicios locales.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            padding: 140px 0 80px;
+            text-align: center;
+            background: radial-gradient(circle at top, rgba(0, 200, 216, 0.1) 0%, var(--bg-color) 100%);
+            border-bottom: 1px solid var(--outline);
+        }
+        .feature-block {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            margin: 4rem 0;
+        }
+        @media (min-width: 768px) {
+            .feature-row {
+                flex-direction: row;
+                align-items: center;
+                gap: 4rem;
+            }
+            .feature-row:nth-child(even) {
+                flex-direction: row-reverse;
+            }
+        }
+        .feature-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            background: var(--surface-low);
+            padding: 3rem;
+            border-radius: var(--radius-lg);
+            border: 1px solid var(--outline);
+        }
+        .feature-content {
+            flex: 1;
+        }
+        .feature-visual {
+            flex: 1;
+            background: var(--surface-base);
+            border-radius: var(--radius-md);
+            min-height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            border: 1px solid rgba(255,255,255,0.05);
+            position: relative;
+            overflow: hidden;
+        }
+        .pricing-summary {
+            background: var(--surface-low);
+            border: 2px solid var(--primary-main);
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            text-align: center;
+            max-width: 600px;
+            margin: 4rem auto;
+            position: relative;
+            box-shadow: 0 0 40px rgba(0, 200, 216, 0.1);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Navbar -->
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Marca/logo.png" alt="Mconector Logo" style="height: 32px; width: auto;">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html" class="nav-link">Inicio</a>
+            <div class="dropdown">
+                <a href="#" class="nav-link" style="display: flex; align-items: center; gap: 4px;">Soluciones <span style="font-size: 0.8em;">▼</span></a>
+                <div class="dropdown-content">
+                    <a href="base-digital.html">Base Digital</a>
+                    <a href="sistema-comercial.html">Sistema Comercial</a>
+                    <a href="asistencia-inteligente.html">Asistencia Inteligente</a>
+                </div>
+            </div>
+            <a href="index.html#planes" class="nav-link">Paquetes</a>
+            <a href="agendar.html" class="btn btn-primary btn-small">Agenda una llamada</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container" style="max-width: 800px;">
+            <p class="text-sm font-semibold text-gradient" style="margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">Nivel 2: Sistema Comercial</p>
+            <h1 class="heading-lg" style="margin-bottom: 1.5rem;">Cierra más ventas mientras <br><span class="text-gradient">el sistema hace el seguimiento</span>.</h1>
+            <p class="subtitle" style="font-size: 1.125rem;">
+                Si tus cotizaciones se pierden en chats de WhatsApp y te cuesta recordar a quién debías llamar hoy, tu empresa necesita un Sistema Comercial automatizado.
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container" style="padding: 4rem 0;">
+        
+        <div class="feature-block">
+            <!-- Feature 1 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--primary-main); font-size: 2rem; margin-bottom: 1rem;">insights</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Pipeline CRM Visual</h3>
+                    <p class="text-secondary">Abandona las hojas de cálculo. Nuestro CRM visualiza a cada prospecto como una tarjeta. Muévelos fácilmente de "Lead Nuevo" a "Cotizando" y a "Trabajo Ganado". Todo tu equipo sabrá el estado exacto de cada cliente al instante.</p>
+                </div>
+                <div class="feature-visual">📊</div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--secondary-main); font-size: 2rem; margin-bottom: 1rem;">calendar_clock</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Seguimiento Automatizado</h3>
+                    <p class="text-secondary">El dinero está en el seguimiento. Configuramos cadenas de SMS y correos para que el sistema le recuerde a tu prospecto amablemente sobre la cotización 48 hrs y 7 días después, ahorrándote horas de labor manual.</p>
+                </div>
+                <div class="feature-visual">⏳</div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--tertiary); font-size: 2rem; margin-bottom: 1rem;">support_agent</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Asistente Comercial SMS</h3>
+                    <p class="text-secondary">Respuestas rápidas programadas. Si un cliente escribe a las 11 PM preguntando por precios, el asistente le responderá de inmediato recolectando los detalles clave de su proyecto para que tú los tengas listos al día siguiente.</p>
+                </div>
+                <div class="feature-visual">💬</div>
+            </div>
+            
+            <!-- Feature 4 -->
+            <div class="feature-row">
+                <div class="feature-content">
+                    <span class="material-symbols-outlined" style="color: var(--primary-main); font-size: 2rem; margin-bottom: 1rem;">verified</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Base Digital Incluida</h3>
+                    <p class="text-secondary">Este es nuestro paquete más completo (Popular). Incluye todo lo de la Base Digital (Landing page de alta conversión, optimización en Google Business y el número de recepción omnicanal) para alimentar tu nuevo embudo comercial.</p>
+                </div>
+                <div class="feature-visual">🌐</div>
+            </div>
+        </div>
+
+        <!-- Pricing Section -->
+        <div class="pricing-summary">
+            <div style="position: absolute; top: -15px; left: 50%; transform: translateX(-50%); background: var(--primary-main); color: var(--bg-color); padding: 0.25rem 1.5rem; border-radius: 20px; font-weight: 700; font-size: 0.85rem; letter-spacing: 1px;">EL MÁS ELEGIDO</div>
+            <h3 class="heading-md" style="margin-bottom: 1rem;">Inversión Transparente</h3>
+            <p class="text-secondary" style="margin-bottom: 2rem;">Todo el ecosistema comercial (Landing + CRM + Secuencias) instalado y afinado para ti.</p>
+            
+            <div style="font-family: var(--font-secondary); margin-bottom: 2.5rem;">
+                <span style="font-size: 3rem; font-weight: 800;">$497</span> <span class="text-secondary">USD / setup inicial</span><br>
+                <div style="margin-top: 0.5rem;">
+                    <span style="color: var(--primary-main); font-weight: 700; font-size: 1.5rem;">+ $197 USD / mes</span>
+                </div>
+            </div>
+
+            <a href="agendar.html" class="btn btn-primary" style="width: 100%; font-size: 1.125rem; padding: 1rem;">Integrar el Sistema Comercial</a>
+            <p class="text-sm text-secondary" style="margin-top: 1.5rem;">¿Prefieres ver el CRM en acción? <a href="agendar.html" style="color: var(--text-primary); text-decoration: underline;">Agenda un tour virtual.</a></p>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container container-footer">
+            <div class="footer-col">
+                <img src="Marca/logo.png" alt="Mconector" class="footer-logo" style="height: 32px;">
+                <p class="text-sm text-secondary" style="max-width: 250px;">Ayudando a negocios de servicios locales a operar con precisión corporativa.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="agendar.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="text-sm text-secondary">© 2026 Mconector. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
