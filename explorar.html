@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar el Sistema | Mconector</title>
+    <meta name="description" content="Conoce a fondo cómo funciona Mconector y descubre qué incluye cada paquete para llevar tu negocio de servicios al siguiente nivel.">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .feature-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-top: 4rem;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (min-width: 768px) {
+            .feature-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        .feature-card {
+            background: var(--surface-low);
+            border: 1px solid var(--outline);
+            border-radius: var(--radius-lg);
+            padding: 2.5rem;
+            text-align: left;
+            transition: transform 0.3s ease;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0, 200, 216, 0.5);
+        }
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: inline-block;
+        }
+        .list-check {
+            list-style: none;
+            padding: 0;
+            margin-top: 1.5rem;
+            color: var(--text-secondary);
+        }
+        .list-check li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .list-check li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--primary-main);
+            font-weight: bold;
+        }
+        .tier-header {
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--outline);
+            margin-bottom: 1.5rem;
+        }
+        .hero-explore {
+            padding: 160px 0 100px;
+            text-align: center;
+            background: linear-gradient(180deg, rgba(15,23,42,1) 0%, rgba(20,30,55,1) 100%);
+            border-bottom: 1px solid var(--outline);
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Navegación Estándar -->
+    <nav class="navbar container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Marca/logo.png" alt="Mconector Logo" style="height: 32px; width: auto;">
+            </a>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Inicio</a>
+            <a href="explorar.html" class="active">Explorar Sistema</a>
+            <a href="agendar.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; margin-left: 1rem;">Agendar Llamada</a>
+        </div>
+    </nav>
+
+    <!-- Hero Explorar -->
+    <section class="hero-explore">
+        <div class="container" style="max-width: 800px;">
+            <p class="text-sm font-semibold text-gradient" style="margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 1px;">EL MOTOR DE TU EMPRESA</p>
+            <h1 class="heading-lg" style="margin-bottom: 1.5rem;">Tecnología construida <br>para <span class="text-gradient">negocios reales</span>.</h1>
+            <p class="subtitle" style="font-size: 1.125rem;">
+                No somos un software genérico de suscripción. Construimos el sistema exacto que tu empresa necesita para dejar de depender de notas de papel, chats personales y la memoria de tus empleados.
+            </p>
+        </div>
+    </section>
+
+    <!-- Desglose de Paquetes (Deep Dive) -->
+    <section class="section" style="padding-top: 6rem;">
+        <div class="container text-center">
+            <h2 class="heading-md" style="margin-bottom: 1rem;">¿Qué incluye exactamente el sistema?</h2>
+            <p class="subtitle" style="max-width: 700px; margin: 0 auto;">Nuestros paquetes no son licencias de uso, son implementaciones completas entregadas llave en mano. Tú nos dices cómo operas, nosotros lo automatizamos.</p>
+            
+            <div class="feature-grid">
+                
+                <!-- Starter -->
+                <div class="feature-card">
+                    <div class="tier-header">
+                        <span class="feature-icon">🚀</span>
+                        <h3 class="heading-sm">Starter</h3>
+                        <p class="text-sm text-secondary" style="margin-top: 0.5rem;">Para negocios que por primera vez van a salir del desorden del papel y Excel.</p>
+                    </div>
+                    <ul class="list-check">
+                        <li><strong>Base de datos centralizada:</strong> Todos tus clientes y proyectos en un solo panel seguro, accesible desde el móvil.</li>
+                        <li><strong>Seguimiento de Leads Básico:</strong> Embudo de ventas visual (Prospecto, Cotizando, Aprobado, Perdido).</li>
+                        <li><strong>Plantillas de SMS:</strong> Respuestas rápidas pre-cargadas para enviar cotizaciones y confirmaciones en 1 clic.</li>
+                        <li><strong>Soporte Inicial:</strong> Sesión de configuración y capacitación de 2 horas para tu equipo.</li>
+                    </ul>
+                </div>
+
+                <!-- Growth -->
+                <div class="feature-card" style="border-color: var(--primary-main); position: relative; overflow: hidden;">
+                    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 4px; background: var(--gradient-primary);"></div>
+                    <div class="tier-header">
+                        <span class="feature-icon">⚡</span>
+                        <h3 class="heading-sm">Growth <span style="font-size: 0.75rem; background: rgba(0,200,216,0.1); color: var(--primary-main); padding: 0.25rem 0.5rem; border-radius: 4px; vertical-align: middle; margin-left: 0.5rem;">POPULAR</span></h3>
+                        <p class="text-sm text-secondary" style="margin-top: 0.5rem;">Para empresas con cuadrillas en campo que necesitan automatización fuerte.</p>
+                    </div>
+                    <ul class="list-check">
+                        <li><strong>Todo lo del plan Starter</strong></li>
+                        <li><strong>Automatización de Recordatorios:</strong> SMS automáticos a tus clientes 24hrs antes del servicio.</li>
+                        <li><strong>Despacho de Cuadrillas:</strong> Asignación de trabajos con notificaciones SMS a tus empleados en campo.</li>
+                        <li><strong>Subida de fotos y reportes:</strong> Tus empleados pueden subir la foto del trabajo terminado directo al sistema antes de irse.</li>
+                        <li><strong>Dashboard Financiero:</strong> Rastreo automático de ingresos vs. cotizaciones aceptadas.</li>
+                    </ul>
+                </div>
+
+                <!-- Custom/Enterprise -->
+                <div class="feature-card" style="grid-column: 1 / -1; display: flex; flex-direction: column; align-items: center; text-align: center; background: url('framed6f1-jpg/ezgif-frame-100.jpg') center/cover; position: relative; z-index: 1;">
+                    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(15, 23, 42, 0.9); z-index: -1; border-radius: inherit;"></div>
+                    <span class="feature-icon">🏢</span>
+                    <h3 class="heading-sm" style="margin-bottom: 1rem;">Enterprise / Custom Scale</h3>
+                    <p class="subtitle" style="max-width: 600px; margin-bottom: 2rem;">¿Tienes necesidades muy complejas de inventario, ruteo GPS o cotizaciones multinivel? Creamos integraciones a medida usando la Inteligencia Artificial más avanzada para modelar tus procesos exactos.</p>
+                    <a href="agendar.html" class="btn btn-primary">Cotizar Proyecto Custom</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="container" style="padding-bottom: 6rem;">
+        <div class="cta-section">
+            <h2 class="heading-md" style="margin-bottom: 1.5rem;">Deja de imaginar cómo sería estar organizado.</h2>
+            <p style="margin-bottom: 2.5rem; color: var(--text-secondary); max-width: 600px; margin-left: auto; margin-right: auto;">
+                El costo del desorden (llamadas perdidas, clientes molestos, empleados mal programados) es muchísimo más alto que instalar un sistema que trabaje por ti.
+            </p>
+            <a href="agendar.html" class="btn btn-primary">Agendar Diagnóstico Personalizado</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container container-footer">
+            <div class="footer-col">
+                <img src="Marca/logo.png" alt="Mconector" class="footer-logo" style="height: 32px;">
+                <p class="text-sm text-secondary" style="max-width: 250px;">Ayudando a negocios de servicios a operar con la precisión de una empresa Fortune 500.</p>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Navegación</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="explorar.html">El Sistema</a></li>
+                    <li><a href="index.html#planes">Precios</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <ul class="footer-links">
+                    <li><a href="agendar.html">Agendar Llamada</a></li>
+                    <li><span class="text-secondary">soporte@mconector.com</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p class="text-sm text-secondary">© 2026 Mconector. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
