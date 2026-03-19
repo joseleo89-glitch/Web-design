@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Reserva Confirmada! | Mconector</title>
+    <meta name="robots" content="noindex, nofollow"> <!-- Muy importante para Thank You Pages -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-content {
+            padding-top: 100px;
+            padding-bottom: 60px;
+            min-height: 80vh;
+        }
+        .success-icon {
+            font-size: 5rem;
+            color: var(--tertiary); /* Verde neón/lima de la paleta */
+            margin-bottom: 1.5rem;
+            animation: bounceIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) both;
+        }
+        @keyframes bounceIn {
+            0% { transform: scale(0); opacity: 0; }
+            50% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .video-placeholder {
+            width: 100%;
+            max-width: 640px;
+            aspect-ratio: 16/9;
+            background: var(--surface-base);
+            border: 1px solid var(--outline);
+            border-radius: var(--radius-lg);
+            margin: 3rem auto;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            overflow: hidden;
+        }
+        .video-play-btn {
+            width: 60px;
+            height: 60px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            backdrop-filter: blur(4px);
+            margin-bottom: 1rem;
+        }
+        .instructions-list {
+            text-align: left;
+            max-width: 600px;
+            margin: 0 auto;
+            background: var(--surface-low);
+            padding: 2.5rem;
+            border-radius: var(--radius-lg);
+        }
+        .instruction-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .instruction-item:last-child {
+            margin-bottom: 0;
+        }
+        .instruction-number {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(0, 200, 216, 0.1); /* Primary con opacidad */
+            color: var(--primary-main);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 1.25rem;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body class="dark-theme">
+
+    <!-- Navbar Minimalista (Como en agendar.html) -->
+    <nav class="navbar container" style="justify-content: center;">
+        <div class="logo">
+            <a href="index.html">
+                <img src="Marca/logo.png" alt="Mconector Logo" style="height: 32px; width: auto;">
+            </a>
+        </div>
+    </nav>
+
+    <main class="page-content text-center">
+        <div class="container">
+            <!-- 1. Sección de Éxito -->
+            <div class="success-icon">✓</div>
+            <h1 class="heading-lg" style="margin-bottom: 1rem;">¡Tu llamada está <span style="color: var(--tertiary);">confirmada</span>!</h1>
+            <p class="subtitle" style="max-width: 600px; margin: 0 auto;">
+                Hemos bloqueado el tiempo en nuestro calendario exclusivamente para ti. Revisa tu correo electrónico para encontrar el enlace de la reunión.
+            </p>
+
+            <!-- 2. Video opcional para calentar al prospecto -->
+            <div class="video-placeholder">
+                <div class="video-play-btn">▶</div>
+                <p class="text-sm text-secondary" style="max-width: 80%;">
+                    [Recomendación: Graba un video horizontal de 1-2 minutos agradeciéndole e insertalo aquí. Dirá "Mira este corto video antes de nuestra llamada". Aumenta muchísimo la tasa de asistencia]
+                </p>
+            </div>
+
+            <!-- 3. Instrucciones Cruciales -->
+            <h3 class="heading-sm" style="margin-bottom: 2rem;">¿Cuáles son los pasos a seguir?</h3>
+            <div class="instructions-list">
+                <div class="instruction-item">
+                    <div class="instruction-number">1</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; font-family: var(--font-secondary);">Añádelo a tu Calendario</h4>
+                        <p class="text-secondary" style="font-size: 0.9rem;">En el correo de confirmación encontrarás botones para agregarlo a tu Google Calendar o Apple Calendar. Asegúrate de hacerlo para recibir el recordatorio.</p>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <div class="instruction-number">2</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; font-family: var(--font-secondary);">Únete desde una PC</h4>
+                        <p class="text-secondary" style="font-size: 0.9rem;">Para aprovechar la sesión (15-20 minutos), te mostraremos demostraciones en vivo. Es vital que te unas desde una computadora para poder ver la pantalla correctamente.</p>
+                    </div>
+                </div>
+                <div class="instruction-item">
+                    <div class="instruction-number">3</div>
+                    <div>
+                        <h4 style="margin-bottom: 0.5rem; font-family: var(--font-secondary);">Investiga tus números</h4>
+                        <p class="text-secondary" style="font-size: 0.9rem;">Ven preparado para hablarnos de cuántos leads manejas actualmente, cuántos trabajadores en campo despachas a diario y cuáles son tus mayores cuellos de botella.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 4rem;">
+                <a href="index.html" class="btn btn-outline">Volver al Inicio</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Minimalista -->
+    <footer class="footer-section" style="padding: 2rem 0; border-top: 1px solid var(--outline); background: var(--bg-color);">
+        <div class="container" style="text-align: center; display: flex; flex-direction: column; align-items: center; gap: 1rem;">
+            <a href="index.html">
+                <img src="Marca/logo.png" alt="Mconector Símbolo" style="height: 24px; opacity: 0.5;">
+            </a>
+            <p class="text-sm text-secondary">© 2026 Mconector. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
