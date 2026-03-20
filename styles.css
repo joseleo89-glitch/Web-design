@@ -214,6 +214,7 @@ section {
   font-weight: 700;
   font-size: 1rem;
   text-decoration: none;
+  color: inherit;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
   border: none;
@@ -245,6 +246,19 @@ section {
 .btn-small {
   padding: 0.6rem 1.25rem;
   font-size: 0.875rem;
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--on-surface);
+  border: 1px solid var(--on-surface-variant);
+}
+
+.btn-outline:hover {
+  background: var(--surface-low);
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-2px);
 }
 
 /* Hero Scroll Section */
